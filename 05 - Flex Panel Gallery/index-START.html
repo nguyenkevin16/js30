@@ -107,6 +107,12 @@
     function toggleOpen() {
       this.classList.toggle('open');
     }
+
+    function toggleActivate(e) {
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
   </script>
 
 
