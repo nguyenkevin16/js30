@@ -15,3 +15,7 @@ function updateButton() {
   const icon = this.paused ? '►' : '❚ ❚';
   toggle.textContent = icon;
 }
+
+function skip() {
+  video.currentTime += parseFloat(this.dataset.skip);
+ }
